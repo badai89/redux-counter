@@ -11,11 +11,7 @@ const reducer = (state = initialState, action = {}) => {
         count: state.count + 1
       };
     case "DECREMENT":
-      return state.count <= 0
-        ? alert("salah")
-        : {
-            count: state.count - 1
-          };
+      return state.count <= 0 ? alert("salah"):{count: state.count - 1};
     default:
       return state;
   }
